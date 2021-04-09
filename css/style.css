@@ -17,8 +17,8 @@
 
 
 .carouimg{
-    width: 1280px;
-    height: 450px;
+    width: 100%;
+    height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
     
