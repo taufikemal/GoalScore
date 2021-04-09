@@ -14,3 +14,12 @@
     font-weight: 700;
     text-decoration: none;
 }
+
+
+.carouimg{
+    width: 1280px;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
