@@ -15,7 +15,6 @@
     text-decoration: none;
 }
 
-
 .carouimg{
     width: 100%;
     min-height: 300px;
@@ -23,4 +22,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     
+}
+
+.middle{
+    padding: 3% 15%;
 }
