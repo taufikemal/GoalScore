@@ -1,28 +1,36 @@
 /* Font Poppins */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-.navbar-nav  li{
-    margin: 0 15px;
+.navbar-nav li {
+  margin: 0 15px;
 }
 
-.logo{
-    font-size: 2em;
-    font-weight: 700;
-    text-decoration: none;
+.logo {
+  font-size: 2em;
+  font-weight: 700;
+  text-decoration: none;
 }
 
-.carouimg{
-    width: 100%;
-    max-height: 550px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
+.carouimg {
+  width: 100%;
+  max-height: 550px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.middle{
-    padding: 3% 15%;
+.container-fluid{
+    padding: 5% 15%;
+}
+
+.starting-news {
+  width: 551px;
+  height: 313px;
+  margin: 0 1%;
+  padding: 225px 118px 16px 34px;
+  border-radius: 16px;
+  background-image: linear-gradient(to top, rgba(255, 105, 105, 0), #ff7575);
 }
