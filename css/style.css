@@ -5,6 +5,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  background-color: #dfdfdf;
+}
+
 .navbar-nav li {
   margin: 0 15px;
 }
@@ -23,7 +27,7 @@
 }
 
 .container-fluid {
-  padding: 5% 15%;
+  padding: 4% 10% 0 10%;
 }
 
 .starting-news {
@@ -35,16 +39,71 @@
   background-image: linear-gradient(to bottom, rgba(255, 105, 105, 0), #3a3dff);
 }
 
-.title-more{
+.title-content {
+  color: #2b2e4a;
+}
+
+.title-more {
   display: flex;
   justify-content: space-between;
   margin: 2% 0;
 }
 
-.more{
-  width: 140px;
-  background: #2B2F4B;
+.more {
+  width: 15%;
+  background: #2b2f4b;
   border-radius: 32px;
   font-weight: 600;
   color: white;
 }
+
+.card-score {
+  background-color: white;
+  width: auto;
+  height: auto;
+  padding: 5% 7%;
+  border-radius: 16px;
+}
+
+.head-card-score{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-league-name{
+  text-align: center;
+}
+
+.main-card-score{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2%;
+}
+.card-team{
+  text-align: center;
+}
+
+.img-team{
+  margin-bottom: 7%;
+}
+
+.card-score-detail{
+  text-align: center;
+}
+
+.score-minute{
+  margin-top: 50%;
+}
+
+.card-standing{
+  background-color: white;
+  width: auto;
+  height: auto;
+  padding: 5% 7%;
+  border-radius: 16px;
+}
+
+.league-logo{
+  text-align: center;
+}
+
