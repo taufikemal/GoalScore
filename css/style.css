@@ -22,8 +22,8 @@
   background-size: cover;
 }
 
-.container-fluid{
-    padding: 5% 15%;
+.container-fluid {
+  padding: 5% 15%;
 }
 
 .starting-news {
@@ -33,4 +33,18 @@
   padding: 225px 118px 16px 34px;
   border-radius: 16px;
   background-image: linear-gradient(to bottom, rgba(255, 105, 105, 0), #3a3dff);
+}
+
+.title-more{
+  display: flex;
+  justify-content: space-between;
+  margin: 2% 0;
+}
+
+.more{
+  width: 140px;
+  background: #2B2F4B;
+  border-radius: 32px;
+  font-weight: 600;
+  color: white;
 }
