@@ -3,6 +3,7 @@
 
 * {
   font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
 }
 
 body {
@@ -109,5 +110,9 @@ body {
 
 .table-standing-margin{
   margin-top: 8%;
+}
+
+.table-standing-margin img{
+  width: 50%;
 }
 
