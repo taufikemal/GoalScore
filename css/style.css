@@ -30,6 +30,10 @@ body {
   padding: 0 10%;
 }
 
+.carousel-caption{
+  padding: 0 18%;
+}
+
 .slider-title{
   position: relative;
   bottom: 4rem;
