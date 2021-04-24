@@ -146,6 +146,11 @@ body {
   width: 50%;
 }
 
+.laliga img{
+  margin: 0;
+  width: 42%;
+}
+
 .starting-news {
   height: 317px;
   padding: 225px 118px 16px 34px;
