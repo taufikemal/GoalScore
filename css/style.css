@@ -146,7 +146,6 @@ body {
 }
 
 .starting-news {
-  width: 551px;
   height: 317px;
   padding: 225px 118px 16px 34px;
   border-radius: 16px;
@@ -158,8 +157,32 @@ body {
   color: white;
   font-style: normal;
   font-weight: 600;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 36px;
   position: relative;
   bottom: 40px;
+}
+
+.row-sm{
+  width: 100%;
+  margin: 1% 0;
+}
+
+.side-news{
+  display: flex;
+}
+
+.side-news img{
+  margin-right: 7%;
+}
+
+.side-news-date{
+  color: #3D3D3D;
+  font-size: 12px;
+  margin: 1.5% 0;
+}
+
+.side-news-title{
+  font-size: 16px;
+  font-weight: 400;
 }
