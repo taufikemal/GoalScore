@@ -4,6 +4,8 @@
 * {
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -142,7 +144,6 @@ body {
 
 .table-standing-margin img {
   width: 50%;
-  height: 50%;
 }
 
 .starting-news {
@@ -185,4 +186,59 @@ body {
 .side-news-title{
   font-size: 16px;
   font-weight: 400;
+}
+
+.card-stats {
+  background-color: white;
+  width: auto;
+  height: auto;
+  padding: 5% 7%;
+  border-radius: 16px;
+  position: relative;
+}
+
+.card-stats-ucl {
+  background-image: url(../assets/img/topgoals/UCL.png);
+  width: auto;
+  height: auto;
+  padding: 5% 7%;
+  border-radius: 16px;
+  background-size: cover;
+  position: relative;
+}
+
+.stats-league{
+  width: 15%;
+  height: 15%;
+}
+
+.stats-name{
+  margin-top: 4%;
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: larger;
+  color: #2B2E4A;
+}
+
+.stats-club{
+  font-size: medium;
+  color: #B6B6B6;
+  margin-bottom: 0;
+}
+
+.stats-goals{
+  font-size: x-large;
+  color: #E84545;
+  font-weight: 700;
+}
+
+.stats-img img{
+  width: 47%;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+}
+
+.footer{
+  margin-top: 7%;
 }
