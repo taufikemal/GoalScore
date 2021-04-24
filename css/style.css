@@ -69,6 +69,10 @@ body {
   background: #2b2f4b;
   border-radius: 32px;
   font-weight: 600;
+}
+
+.link-more{
+  text-decoration: none;
   color: white;
 }
 

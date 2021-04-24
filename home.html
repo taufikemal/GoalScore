@@ -7,16 +7,13 @@
 
     <!-- Judul -->
     <title>GoalScore</title>
-
     <!-- CSS Bootstrap -->
     <link
       href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-
     <!-- CSS Local -->
     <link rel="stylesheet" href="./css/style.css" />
-
     <!-- Font Poppins -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -44,16 +41,22 @@
         <nav class="navbar bg-light">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#"> News </a>
+              <a class="nav-link" href="./news/mainnews.html"> News </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"> Live Score </a>
+              <a class="nav-link" href="./livescores/livematches.html">
+                Live Score
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"> League Standings </a>
+              <a class="nav-link" href="./leaguestanding/premierleague.html">
+                League Standings
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"> Player Stats </a>
+              <a class="nav-link" href="./playerstats/premierleague.html">
+                Player Stats
+              </a>
             </li>
           </ul>
         </nav>
@@ -97,9 +100,11 @@
               Streaming pertandingan Tim Kesayangan kamu tak terbatas di ponsel,
               tablet, laptop, dan TV-mu.
             </p>
-            <button type="button" class="btn btn-danger">
-              Tonton Sekarang
-            </button>
+            <a href="./livescores/livematches.html">
+              <button type="button" class="btn btn-danger">
+                Tonton Sekarang
+              </button>
+            </a>
           </div>
         </div>
         <div class="carousel-item">
@@ -153,7 +158,7 @@
     <div class="container-fluid">
       <div class="title-more">
         <h4 class="title-content">Trending Matches</h4>
-        <button type="button" class="btn more">More</button>
+        <button class="btn more"><a href="./livescores/livematches.html" class="link-more">More</a></button>
       </div>
       <div class="row">
         <div class="col-sm">
@@ -256,7 +261,9 @@
     <div class="container-fluid">
       <div class="title-more">
         <h4 class="title-content">Top Standings</h4>
-        <button type="button" class="btn more">More</button>
+        <a href="./leaguestanding/premierleague.html">
+          <button class="btn more"><a href="./leaguestanding/premierleague.html" class="link-more">More</a></button>
+        </a>
       </div>
       <div class="row">
         <div class="col-sm">
@@ -385,39 +392,53 @@
               <img src="./assets/img/leaguehome/Laliga.png" alt="" />
             </div>
             <div class="rank-standing">
-              <table class="table table-borderless table-standing-margin laliga">
+              <table
+                class="table table-borderless table-standing-margin laliga"
+              >
                 <tbody>
                   <tr>
                     <td>
-                      <img src="./assets/img/homestandings/atletico 1.png" alt="">
+                      <img
+                        src="./assets/img/homestandings/atletico 1.png"
+                        alt=""
+                      />
                     </td>
                     <td>Atletico Madrid</td>
                     <td>73</td>
                   </tr>
                   <tr>
                     <td>
-                      <img src="./assets/img/homestandings/madrid.png" alt="">
+                      <img src="./assets/img/homestandings/madrid.png" alt="" />
                     </td>
                     <td>Real Madrid</td>
                     <td>70</td>
                   </tr>
                   <tr>
                     <td>
-                      <img src="./assets/img/homestandings/barcelona.png" alt="">
+                      <img
+                        src="./assets/img/homestandings/barcelona.png"
+                        alt=""
+                      />
                     </td>
                     <td>FC Barcelona</td>
                     <td>68</td>
                   </tr>
                   <tr>
                     <td>
-                      <img src="./assets/img/homestandings/sevilla.png" alt="">
+                      <img
+                        src="./assets/img/homestandings/sevilla.png"
+                        alt=""
+                      />
                     </td>
                     <td>Sevilla</td>
                     <td>67</td>
                   </tr>
                   <tr>
                     <td>
-                      <img src="./assets/img/homestandings/sociedad.png" alt="">
+                      <img
+                        src="./assets/img/homestandings/sociedad.png"
+                        alt=""
+                      />
                     </td>
                     <td>Real Sociedad</td>
                     <td>50</td>
@@ -425,7 +446,6 @@
                 </tbody>
               </table>
             </div>
-            
           </div>
         </div>
       </div>
@@ -435,7 +455,9 @@
     <div class="container-fluid">
       <div class="title-more">
         <h4 class="title-content">Hot News</h4>
-        <button type="button" class="btn more">More</button>
+        <a href="./news/mainnews.html">
+          <button class="btn more"><a href="./news/mainnews.html" class="link-more">More</a></button>
+        </a>
       </div>
       <div class="row">
         <div class="col-sm">
@@ -491,7 +513,9 @@
     <div class="container-fluid">
       <div class="title-more">
         <h4 class="title-content">Top Scores</h4>
-        <button type="button" class="btn more">More</button>
+        <a href="./playerstats/premierleague.html">
+          <button class="btn more"><a href="./playerstats/premierleague.html" class="link-more">More</a></button>
+        </a>
       </div>
       <div class="row">
         <div class="col-sm">
@@ -507,7 +531,7 @@
               <p class="stats-goals">10 Goals</p>
             </div>
             <div class="stats-img">
-              <img src="./assets/img/topgoals/haaland.png" alt="">
+              <img src="./assets/img/topgoals/haaland.png" alt="" />
             </div>
           </div>
         </div>
@@ -524,7 +548,7 @@
               <p class="stats-goals">21 Goals</p>
             </div>
             <div class="stats-img">
-              <img src="./assets/img/topgoals/kane.png" alt="">
+              <img src="./assets/img/topgoals/kane.png" alt="" />
             </div>
           </div>
         </div>
@@ -541,7 +565,7 @@
               <p class="stats-goals">25 Goals</p>
             </div>
             <div class="stats-img">
-              <img src="./assets/img/topgoals/messi.png" alt="">
+              <img src="./assets/img/topgoals/messi.png" alt="" />
             </div>
           </div>
         </div>
@@ -552,7 +576,9 @@
     <div class="container-fluid">
       <div class="title-more">
         <h4 class="title-content">Top Assist</h4>
-        <button type="button" class="btn more">More</button>
+        <a href="./playerstats/premierleague.html">
+          <button class="btn more"><a href="./playerstats/premierleague.html" class="link-more">More</a></button>
+        </a>
       </div>
       <div class="row">
         <div class="col-sm">
@@ -568,7 +594,7 @@
               <p class="stats-goals">6 Assist</p>
             </div>
             <div class="stats-img">
-              <img src="./assets/img/topgoals/cuadradormv.png" alt="">
+              <img src="./assets/img/topgoals/cuadradormv.png" alt="" />
             </div>
           </div>
         </div>
@@ -585,7 +611,7 @@
               <p class="stats-goals">13 Assist</p>
             </div>
             <div class="stats-img">
-              <img src="./assets/img/topgoals/kane.png" alt="">
+              <img src="./assets/img/topgoals/kane.png" alt="" />
             </div>
           </div>
         </div>
@@ -602,7 +628,7 @@
               <p class="stats-goals">10 Assist</p>
             </div>
             <div class="stats-img">
-              <img src="./assets/img/topgoals/messi.png" alt="">
+              <img src="./assets/img/topgoals/messi.png" alt="" />
             </div>
           </div>
         </div>
@@ -611,9 +637,7 @@
 
     <!-- Footer -->
     <footer>
-      <div class="footer">
-        
-      </div>
+      <div class="footer"></div>
     </footer>
     <!-- JS Bootstrap -->
     <script
