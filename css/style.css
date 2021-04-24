@@ -25,6 +25,23 @@ body {
   max-height: 600px;
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 0 10%;
+}
+
+.slider-title{
+  position: relative;
+  bottom: 4rem;
+}
+
+.slider-desc{
+  position: relative;
+  bottom: 4rem;
+  font-weight: 500;
+}
+
+.carousel-caption button{
+  position: relative;
+  bottom: 3.5rem;
 }
 
 .container-fluid {
@@ -62,6 +79,21 @@ body {
   justify-content: space-between;
 }
 
+.head-card-score img{
+  width: 10%;
+  height: 10%;
+  position: relative;
+}
+
+.live-card-score{
+  color: red;
+  font-weight: 600;
+}
+
+.card-league-name{
+  color: #198CCD;
+}
+
 .card-league-name {
   text-align: center;
 }
@@ -76,7 +108,7 @@ body {
 }
 
 .img-team {
-  margin-bottom: 7%;
+  margin-bottom: 5%;
 }
 
 .card-score-detail {
@@ -95,6 +127,11 @@ body {
   border-radius: 16px;
 }
 
+.league-logo img{
+  width: 40%;
+  height: 40%;
+}
+
 .league-logo {
   text-align: center;
 }
@@ -105,6 +142,7 @@ body {
 
 .table-standing-margin img {
   width: 50%;
+  height: 50%;
 }
 
 .starting-news {
