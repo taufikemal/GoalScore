@@ -49,9 +49,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
-                League Standings
-              </a>
+              <a class="nav-link" href="#"> League Standings </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../playerstats/premierleague.html">
@@ -63,9 +61,27 @@
       </div>
     </nav>
 
+    <!-- League List -->
+    <div class="container-fluid"></div>
 
+    <!-- League Table -->
     <div class="container-fluid">
-
+      <div class="table-standing">
+        <table class="table table-borderless">
+          <thead>
+            <th scope="col">Pos</th>
+            <th scope="col">Logo</th>
+            <th scope="col">Club</th>
+            <th scope="col">Played</th>
+            <th scope="col">Won</th>
+            <th scope="col">Draw</th>
+            <th scope="col">Loss</th>
+            <th scope="col">Points</th>
+            <th scope="col">Form</th>
+          </thead>
+          <tbody id="fetch" class="fetch"></tbody>
+        </table>
+      </div>
     </div>
     <!-- Footer -->
     <footer>
