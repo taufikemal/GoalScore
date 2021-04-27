@@ -12,6 +12,8 @@ body {
   background-color: #dfdfdf;
 }
 
+
+/* HomePage */
 .navbar-nav li {
   margin: 0 15px;
 }
@@ -256,7 +258,7 @@ body {
   margin-top: 7%;
 }
 
-/* LeagueStandingTable */
+/* LeagueStandingTablePage */
 .table-standing{
   background-color: white;
   padding: 2% 2% 2% 3%;
