@@ -256,6 +256,21 @@ body {
 
 .footer{
   margin-top: 7%;
+  background-color: #2B2E4A;
+  color: #fff;
+  font-size:large;
+  font-weight:300;
+}
+
+ul li {
+  text-decoration: none;
+  list-style: none;
+  margin-top: 20px;
+  margin-bottom: 2px;
+}
+
+.header-footer{
+  font-weight: 600;
 }
 
 /* LeagueStandingTablePage */
