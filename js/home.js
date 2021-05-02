@@ -67,6 +67,7 @@ const mainnews = ()=>{
     let maks = 3;
     // document.getElementById('starting-news-home').style.backgroundImage = "url(result[0].urlToImage)";
     // head news image
+    document.getElementById('starting-news-home').src = result[0].urlToImage
     document.getElementById('titletopnewshome').innerHTML = result[0].title
     // Other news Image (3)
     document.getElementById('sidenewsimg1').src = result[1].urlToImage
