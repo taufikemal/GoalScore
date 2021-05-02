@@ -66,13 +66,20 @@ const mainnews = ()=>{
     let result = data.articles;
     let maks = 3;
     // document.getElementById('starting-news-home').style.backgroundImage = "url(result[0].urlToImage)";
+    // head news image
     document.getElementById('titletopnewshome').innerHTML = result[0].title
-    for(let i = 0;i<maks;i++){
-      console.log(result[i].urlToImage)
-      console.log(result[i].author)
-      console.log(result[i].title)
-      console.log(result[i].publishedAt)
-    }
+    // Other news Image (3)
+    document.getElementById('sidenewsimg1').src = result[1].urlToImage
+    document.getElementById('sidenewsimg2').src = result[2].urlToImage
+    document.getElementById('sidenewsimg3').src = result[3].urlToImage
+    // Other news Date (3)
+    document.getElementById('sidenewsdate1').innerHTML = result[1].publishedAt
+    document.getElementById('sidenewsdate2').innerHTML = result[2].publishedAt
+    document.getElementById('sidenewsdate3').innerHTML = result[3].publishedAt
+    // Other news Title (3)
+    document.getElementById('sidenewstitle1').innerHTML = result[1].title
+    document.getElementById('sidenewstitle2').innerHTML = result[2].title
+    document.getElementById('sidenewstitle3').innerHTML = result[3].title
   })
 }
 mainnews()

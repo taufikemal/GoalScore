@@ -157,8 +157,8 @@ body {
   height: 317px;
   padding-left: 10%;
   border-radius: 14px;
-  /* background: linear-gradient(to bottom, rgba(255, 105, 105, 0), #3a3dff),
-    url(../assets/img/topNewsHome/main-news.png); */
+  background: linear-gradient(to bottom, rgba(255, 105, 105, 0), #3a3dff),
+    url(../assets/img/topNewsHome/main-news.png);
 }
 
 .title-top-news {
@@ -182,6 +182,8 @@ body {
 
 .side-news img{
   margin-right: 7%;
+  width: 140px;
+  border-radius: 10px;
 }
 
 .side-news-date{
