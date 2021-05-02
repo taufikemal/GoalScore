@@ -13,7 +13,9 @@ fetch('https://api.football-data.org/v2/competitions/PL/scorers',{
         temp += "<tr>"
         temp += `<td>${i}</td>`
         temp += `<td>${element.player.name}</td>`
+        temp += `<td>${element.player.nationality}</td>`
         temp += `<td>${element.team.name}</td>`
+        temp += `<td>${element.player.position}</td>`
         temp += `<td>${element.numberOfGoals}</td></tr>`
         i++
     });

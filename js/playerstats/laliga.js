@@ -7,9 +7,17 @@ fetch('https://api.football-data.org/v2/competitions/PD/scorers',{
 .then(response => response.json())
 .then((data)=>{
     let result = data.scorers
+    let temp = "";
+    let i = 1;
     result.forEach(element => {
-        console.log(element.player.name)
-        console.log(element.team.name)
-        console.log(element.numberOfGoals)
+        temp += "<tr>"
+        temp += `<td>${i}</td>`
+        temp += `<td>${element.player.name}</td>`
+        temp += `<td>${element.player.nationality}</td>`
+        temp += `<td>${element.team.name}</td>`
+        temp += `<td>${element.player.position}</td>`
+        temp += `<td>${element.numberOfGoals}</td></tr>`
+        i++
     });
+    document.getElementById("topscorer-fetch").innerHTML = temp;
 })
