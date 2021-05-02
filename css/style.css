@@ -33,8 +33,9 @@ body {
 }
 
 .carousel-caption{
-  padding: 0 18%;
+  padding: 0 10%;
 }
+
 
 .slider-title{
   position: relative;
@@ -154,10 +155,10 @@ body {
 .starting-news {
   position: relative;
   height: 317px;
-  padding: 225px 118px 16px 34px;
-  border-radius: 16px;
-  background: linear-gradient(to bottom, rgba(255, 105, 105, 0), #3a3dff),
-    url(../assets/img/topNewsHome/main-news.png);
+  padding-left: 10%;
+  border-radius: 14px;
+  /* background: linear-gradient(to bottom, rgba(255, 105, 105, 0), #3a3dff),
+    url(../assets/img/topNewsHome/main-news.png); */
 }
 
 .title-top-news {

@@ -65,7 +65,10 @@ const mainnews = ()=>{
   .then((data)=>{
     let result = data.articles;
     let maks = 3;
+    // document.getElementById('starting-news-home').style.backgroundImage = "url(result[0].urlToImage)";
+    document.getElementById('titletopnewshome').innerHTML = result[0].title
     for(let i = 0;i<maks;i++){
+      console.log(result[i].urlToImage)
       console.log(result[i].author)
       console.log(result[i].title)
       console.log(result[i].publishedAt)
