@@ -263,6 +263,13 @@ ul li {
 .header-footer{
   font-weight: 600;
 }
+.link-footer a{
+  color: white;
+  text-decoration: none;
+}
+.link-footer a:hover{
+  color: darkcyan;
+}
 
 /* LeagueStandingTablePage */
 .table-standing{
