@@ -1,3 +1,4 @@
+// Fetch League Standing
 const laliga = () => {
   fetch(
     "https://www.thesportsdb.com/api/v1/json/1/lookuptable.php?l=4335&s=2020-2021"
@@ -59,6 +60,7 @@ laliga()
 premierleague()
 ligue1()
 
+// Fetch Local News
 const mainnews = ()=>{
   fetch('./js/uefanews.json')
   .then((response) => response.json())

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Judul -->
-    <title>Premier League | GoalScore</title>
+    <title>GoalScore</title>
     <!-- CSS Bootstrap -->
     <link
       href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
@@ -46,7 +46,9 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"> League Standings </a>
+              <a class="nav-link" href="../leaguestanding/premierleague.html">
+                League Standings
+              </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../playerstats/premierleague.html">
@@ -60,30 +62,31 @@
         </nav>
       </div>
     </nav>
-
-    <!-- League List -->
-    <div class="container-fluid"></div>
-
-    <!-- League Table -->
+    <!-- Scorers Table -->
     <div class="container-fluid">
       <div class="topscorer-title">
-        <h3>Premier League</h3>
+        <h3>Serie A</h3>
       </div>
-      <div class="table-standing">
-        <table class="table table-borderless">
-          <thead>
-            <th scope="col">Pos</th>
-            <th scope="col"></th>
-            <th scope="col">Club</th>
-            <th scope="col">Played</th>
-            <th scope="col">Won</th>
-            <th scope="col">Draw</th>
-            <th scope="col">Loss</th>
-            <th scope="col">Points</th>
-            <th scope="col">Form</th>
-          </thead>
-          <tbody id="fetch" class="fetch"></tbody>
-        </table>
+      <div class="topscorer-content">
+        <div class="topscorer-container">
+          <div class="table-responsive">
+            <table class="table table-borderless">
+              <thead>
+                <tr>
+                  <th>Pos</th>
+                  <th>Player Name</th>
+                  <th></th>
+                  <th>Club Name</th>
+                  <th>Nationality</th>
+                  <th>Position</th>
+                  <th>Goals</th>
+                </tr>
+              </thead>
+              <tbody id="topscorer-fetch">
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
     </div>
     <!-- Footer -->
@@ -147,6 +150,6 @@
       integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
       crossorigin="anonymous"
     ></script>
-    <script src="../js/leaguestanding/premierleague.js"></script>
+    <script src="../js/playerstats/seria.js"></script>
   </body>
 </html>
