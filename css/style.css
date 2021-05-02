@@ -276,7 +276,7 @@ ul li {
 /* LeagueStandingTablePage */
 .table-standing{
   background-color: white;
-  padding: 4% 4% 4% 4%;
+  padding: 2.5% 2.5%;
   border-radius: 20px;
   text-align: center;
 }
@@ -302,7 +302,7 @@ ul li {
 }
 .topscorer-container{
   background-color: white;
-  padding: 4% 4%;
+  padding: 2.5% 2.5%;
   border-radius: 20px;
   text-align: center;
 }
