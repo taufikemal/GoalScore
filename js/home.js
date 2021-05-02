@@ -9,7 +9,6 @@ const laliga = () => {
       let maks = 5
       let temp = ""
       for(let i = 0;i<maks;i++){
-          console.log(result[i].strTeam)
           temp += "<tr>"
           temp += `<td><img src=${result[i].strTeamBadge} width="30px"></td>`
           temp += `<td>${result[i].strTeam}</td>`
@@ -29,7 +28,6 @@ const premierleague = () => {
         let maks = 5
         let temp = ""
         for(let i = 0;i<maks;i++){
-            console.log(result[i].strTeam)
             temp += "<tr>"
             temp += `<td><img src=${result[i].strTeamBadge} width="30px"></td>`
             temp += `<td>${result[i].strTeam}</td>`
@@ -49,7 +47,6 @@ const premierleague = () => {
         let maks = 5
         let temp = ""
         for(let i = 0;i<maks;i++){
-            console.log(result[i].strTeam)
             temp += "<tr>"
             temp += `<td><img src=${result[i].strTeamBadge} width="30px"></td>`
             temp += `<td>${result[i].strTeam}</td>`
@@ -61,3 +58,18 @@ const premierleague = () => {
 laliga()
 premierleague()
 ligue1()
+
+const mainnews = ()=>{
+  fetch('./js/uefanews.json')
+  .then((response) => response.json())
+  .then((data)=>{
+    let result = data.articles;
+    let maks = 3;
+    for(let i = 0;i<maks;i++){
+      console.log(result[i].author)
+      console.log(result[i].title)
+      console.log(result[i].publishedAt)
+    }
+  })
+}
+mainnews()

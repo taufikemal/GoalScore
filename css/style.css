@@ -140,8 +140,7 @@ body {
 }
 
 .league-logo img{
-  width: 40%;
-  height: 40%;
+  width: 50%;
 }
 
 .league-logo {
@@ -153,6 +152,7 @@ body {
 }
 
 .starting-news {
+  position: relative;
   height: 317px;
   padding: 225px 118px 16px 34px;
   border-radius: 16px;
@@ -166,8 +166,8 @@ body {
   font-weight: 600;
   font-size: 20px;
   line-height: 36px;
-  position: relative;
-  bottom: 40px;
+  position: absolute;
+  bottom: 5%;
 }
 
 .row-sm{
