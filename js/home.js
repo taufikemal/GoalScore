@@ -87,6 +87,32 @@ const mainnews = ()=>{
 }
 mainnews()
 
+//Fetch UCL
+fetch('https://api.football-data.org/v2/competitions/CL/scorers',{
+    "method" : "GET",
+    "headers" : {
+        "X-Auth-Token" : "e88f743b2b444752a685b7d76e59b39e"
+    }
+})
+.then(response => response.json())
+.then((data)=>{
+    let result = data.scorers
+    let maks = 1
+    let playername = ""
+    let clubname = ""
+    let goals = ""
+    for(let i = 0;i<maks;i++){
+      playername = result[i].player.name
+      clubname = result[i].team.name
+      goals = result[i].numberOfGoals
+    }
+    document.getElementById('statscl-player-name').innerHTML = playername;
+    document.getElementById('statscl-club-name').innerHTML = clubname;
+    document.getElementById('statscl-goals').textContent += goals
+    document.getElementById('statscl-goals').textContent += " Goals"
+})
+
+
 // Fetch Top Scorer EPL
 fetch('https://api.football-data.org/v2/competitions/PL/scorers',{
     "method" : "GET",
