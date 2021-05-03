@@ -186,3 +186,52 @@ fetch('https://api.football-data.org/v2/competitions/BL1/scorers',{
     document.getElementById('statsbl-goals').textContent += goals
     document.getElementById('statsbl-goals').textContent += " Goals"
 })
+
+//Fetch SerieA
+fetch('https://api.football-data.org/v2/competitions/SA/scorers',{
+    "method" : "GET",
+    "headers" : {
+        "X-Auth-Token" : "7cfca04522084b4e818a63ea68c6978f"
+    }
+})
+.then(response => response.json())
+.then((data)=>{
+    let result = data.scorers
+    let maks = 1
+    let playername = ""
+    let clubname = ""
+    let goals = ""
+    for(let i = 0;i<maks;i++){
+      playername = result[i].player.name
+      clubname = result[i].team.name
+      goals = result[i].numberOfGoals
+    }
+    document.getElementById('statsseriea-player-name').innerHTML = playername;
+    document.getElementById('statsseriea-club-name').innerHTML = clubname;
+    document.getElementById('statsseriea-goals').textContent += goals
+    document.getElementById('statsseriea-goals').textContent += " Goals"
+})
+//Fetch Ligue1
+fetch('https://api.football-data.org/v2/competitions/FL1/scorers',{
+    "method" : "GET",
+    "headers" : {
+        "X-Auth-Token" : "7cfca04522084b4e818a63ea68c6978f"
+    }
+})
+.then(response => response.json())
+.then((data)=>{
+    let result = data.scorers
+    let maks = 1
+    let playername = ""
+    let clubname = ""
+    let goals = ""
+    for(let i = 0;i<maks;i++){
+      playername = result[i].player.name
+      clubname = result[i].team.name
+      goals = result[i].numberOfGoals
+    }
+    document.getElementById('statsligue1-player-name').innerHTML = playername;
+    document.getElementById('statsligue1-club-name').innerHTML = clubname;
+    document.getElementById('statsligue1-goals').textContent += goals
+    document.getElementById('statsligue1-goals').textContent += " Goals"
+})
