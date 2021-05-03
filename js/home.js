@@ -111,7 +111,7 @@ fetch('https://api.football-data.org/v2/competitions/PL/scorers',{
     document.getElementById('statsepl-goals').textContent += goals
     document.getElementById('statsepl-goals').textContent += " Goals"
 })
-
+//Fetch La Liga
 fetch('https://api.football-data.org/v2/competitions/PD/scorers',{
     "method" : "GET",
     "headers" : {
@@ -134,4 +134,29 @@ fetch('https://api.football-data.org/v2/competitions/PD/scorers',{
     document.getElementById('statslaliga-club-name').innerHTML = clubname;
     document.getElementById('statslaliga-goals').textContent += goals
     document.getElementById('statslaliga-goals').textContent += " Goals"
+    
+})
+//Fetch Bundesliga
+fetch('https://api.football-data.org/v2/competitions/BL1/scorers',{
+    "method" : "GET",
+    "headers" : {
+        "X-Auth-Token" : "73c5bf0c1c30422cbeb8b1d734a1859e"
+    }
+})
+.then(response => response.json())
+.then((data)=>{
+    let result = data.scorers
+    let maks = 1
+    let playername = ""
+    let clubname = ""
+    let goals = ""
+    for(let i = 0;i<maks;i++){
+      playername = result[i].player.name
+      clubname = result[i].team.name
+      goals = result[i].numberOfGoals
+    }
+    document.getElementById('statsbl-player-name').innerHTML = playername;
+    document.getElementById('statsbl-club-name').innerHTML = clubname;
+    document.getElementById('statsbl-goals').textContent += goals
+    document.getElementById('statsbl-goals').textContent += " Goals"
 })
