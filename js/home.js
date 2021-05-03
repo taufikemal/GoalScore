@@ -86,3 +86,52 @@ const mainnews = ()=>{
   })
 }
 mainnews()
+
+// Fetch Top Scorer EPL
+fetch('https://api.football-data.org/v2/competitions/PL/scorers',{
+    "method" : "GET",
+    "headers" : {
+        "X-Auth-Token" : "73c5bf0c1c30422cbeb8b1d734a1859e"
+    }
+})
+.then(response => response.json())
+.then((data)=>{
+    let result = data.scorers
+    let maks = 1
+    let playername = ""
+    let clubname = ""
+    let goals = ""
+    for(let i = 0;i<maks;i++){
+      playername = result[i].player.name
+      clubname = result[i].team.name
+      goals = result[i].numberOfGoals
+    }
+    document.getElementById('statsepl-player-name').innerHTML = playername;
+    document.getElementById('statsepl-club-name').innerHTML = clubname;
+    document.getElementById('statsepl-goals').textContent += goals
+    document.getElementById('statsepl-goals').textContent += " Goals"
+})
+
+fetch('https://api.football-data.org/v2/competitions/PD/scorers',{
+    "method" : "GET",
+    "headers" : {
+        "X-Auth-Token" : "73c5bf0c1c30422cbeb8b1d734a1859e"
+    }
+})
+.then(response => response.json())
+.then((data)=>{
+    let result = data.scorers
+    let maks = 1
+    let playername = ""
+    let clubname = ""
+    let goals = ""
+    for(let i = 0;i<maks;i++){
+      playername = result[i].player.name
+      clubname = result[i].team.name
+      goals = result[i].numberOfGoals
+    }
+    document.getElementById('statslaliga-player-name').innerHTML = playername;
+    document.getElementById('statslaliga-club-name').innerHTML = clubname;
+    document.getElementById('statslaliga-goals').textContent += goals
+    document.getElementById('statslaliga-goals').textContent += " Goals"
+})
