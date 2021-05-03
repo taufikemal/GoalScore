@@ -91,7 +91,7 @@ mainnews()
 fetch('https://api.football-data.org/v2/competitions/CL/scorers',{
     "method" : "GET",
     "headers" : {
-        "X-Auth-Token" : "e88f743b2b444752a685b7d76e59b39e"
+        "X-Auth-Token" : "7cfca04522084b4e818a63ea68c6978f"
     }
 })
 .then(response => response.json())
