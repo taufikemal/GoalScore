@@ -13,7 +13,7 @@ fetch('https://api.football-data.org/v2/competitions/BL1/scorers',{
         temp += "<tr>"
         temp += `<td>${i}</td>`
         temp += `<td>${element.player.name}</td>`
-        temp += `<td><img src="../assets/img/Bundesliga All Teams/${element.team.name}.png" width="30px"></td>`
+        temp += `<td><img src="../assets/img/Bundesliga All Team/${element.team.name}.png" width="30px"></td>`
         temp += `<td>${element.team.name}</td>`
         temp += `<td>${element.player.nationality}</td>`
         temp += `<td>${element.player.position}</td>`
