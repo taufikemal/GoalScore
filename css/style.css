@@ -144,9 +144,24 @@ body {
   margin-bottom: 5%;
 }
 
+.cardscore-content{
+  position: relative;
+}
+
+.footer-card-score{
+  position: absolute;
+  top: 80%;
+  font-size: 68%;
+}
+
 .card-score-detail {
+  display: flex;
+  padding: 0 10%;
+  font-size: 240%;
+}
+.footer-card-score{
+  margin: 0;
   text-align: center;
-  font-size: 230%;
 }
 
 .score-minute {
