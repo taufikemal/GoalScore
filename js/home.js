@@ -24,16 +24,16 @@ const laligamatch = () =>{
   .then((response)=>response.json())
   .then((data) =>{
     let result = data.events
-    document.getElementById('finished-card-score2').innerHTML = result[0].strStatus.substr(6,8)
-    document.getElementById('card-round2').innerHTML = 'Fixtures '+result[0].intRound
-    document.getElementById('card-league-img2').src = `./assets/img/leaguehome/${result[0].strLeague}.png`
-    document.getElementById('card-hometeam-img2').src = `./assets/img/All Teams/${result[0].strHomeTeam}.png`
-    document.getElementById('card-hometeam-name2').innerHTML = result[0].strHomeTeam
-    document.getElementById('card-scorehome2').innerHTML = `${result[0].intHomeScore}`
-    document.getElementById('card-scoreaway2').innerHTML = `${result[0].intAwayScore}`
+    document.getElementById('finished-card-score2').innerHTML = result[1].strStatus.substr(6,8)
+    document.getElementById('card-round2').innerHTML = 'Fixtures '+result[1].intRound
+    document.getElementById('card-league-img2').src = `./assets/img/leaguehome/${result[1].strLeague}.png`
+    document.getElementById('card-hometeam-img2').src = `./assets/img/All Teams/${result[1].strHomeTeam}.png`
+    document.getElementById('card-hometeam-name2').innerHTML = result[1].strHomeTeam
+    document.getElementById('card-scorehome2').innerHTML = `${result[1].intHomeScore}`
+    document.getElementById('card-scoreaway2').innerHTML = `${result[1].intAwayScore}`
     document.getElementById('card-date2').innerHTML = result[0].dateEvent.split("-").reverse().join("/")
-    document.getElementById('card-awayteam-img2').src = `./assets/img/All Teams/${result[0].strAwayTeam}.png`
-    document.getElementById('card-awayteam-name2').innerHTML = result[0].strAwayTeam
+    document.getElementById('card-awayteam-img2').src = `./assets/img/All Teams/${result[1].strAwayTeam}.png`
+    document.getElementById('card-awayteam-name2').innerHTML = result[1].strAwayTeam
   })
 }
 laligamatch()
