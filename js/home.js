@@ -56,7 +56,7 @@ const bundesligamatch = () =>{
   })
 }
 bundesligamatch()
-//ligue1
+//ucl
 const uclmatch = ()=>{
   fetch('https://www.thesportsdb.com/api/v1/json/1/eventspastleague.php?id=4480')
   .then((response)=>response.json())
@@ -75,6 +75,25 @@ const uclmatch = ()=>{
   })
 }
 uclmatch()
+//seriea
+const serieamatch = ()=>{
+  fetch('https://www.thesportsdb.com/api/v1/json/1/eventspastleague.php?id=4332')
+  .then((response)=>response.json())
+  .then((data) =>{
+    let result = data.events
+    document.getElementById('finished-card-score5').innerHTML = result[1].strStatus.substr(6,8)
+    document.getElementById('card-round5').innerHTML = 'Fixtures '+result[1].intRound
+    document.getElementById('card-league-img5').src = `./assets/img/leaguehome/${result[1].strLeague}.png`
+    document.getElementById('card-hometeam-img5').src = `./assets/img/All Teams/${result[1].strHomeTeam}.png`
+    document.getElementById('card-hometeam-name5').innerHTML = result[1].strHomeTeam.replace(/\s/g, "")
+    document.getElementById('card-scorehome5').innerHTML = `${result[1].intHomeScore}`
+    document.getElementById('card-scoreaway5').innerHTML = `${result[1].intAwayScore}`
+    document.getElementById('card-date5').innerHTML = result[1].dateEvent.split("-").reverse().join("/")
+    document.getElementById('card-awayteam-img5').src = `./assets/img/All Teams/${result[1].strAwayTeam}.png`
+    document.getElementById('card-awayteam-name5').innerHTML = result[1].strAwayTeam.replace(/\s/g, "")
+  })
+}
+serieamatch()
 
 
 // Fetch League Standing
