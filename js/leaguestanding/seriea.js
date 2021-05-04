@@ -16,7 +16,7 @@ fetch('https://www.thesportsdb.com/api/v1/json/1/lookuptable.php?l=4332&s=2020-2
           temp += `<td>${item.intDraw}</td>`
           temp += `<td>${item.intLoss}</td>`
           temp += `<td>${item.intPoints}</td>`
-          temp += `<td>${item.strForm}</td></tr>`
+          temp += `<td>${item.strForm.split('').join(' ')}</td></tr>`
           
       });
       document.getElementById("fetch").innerHTML = temp;
