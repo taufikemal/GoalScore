@@ -93,8 +93,8 @@ body {
   background-color: white;
   width: auto;
   height: auto;
-  padding: 5% 7%;
-  border-radius: 16px;
+  padding: 4% 5.5%;
+  border-radius: 14px;
 }
 
 .head-card-score {
@@ -103,29 +103,39 @@ body {
 }
 
 .head-card-score img{
-  width: 10%;
-  height: 10%;
-  position: relative;
+  width: 9%;
+  height: 9%;
 }
 
 .live-card-score{
   color: red;
   font-weight: 600;
+  font-size: 95%;
+  text-transform: uppercase;
+}
+
+.finished-card-score{
+  color: green;
+  font-weight: 550;
+  font-size: 90%;
+  text-transform: uppercase;
 }
 
 .card-league-name{
   color: #198CCD;
 }
 
-.card-league-name {
-  text-align: center;
-}
-
 .main-card-score {
   display: flex;
   justify-content: space-between;
-  margin-top: 2%;
 }
+
+.card-date{
+  font-size: small;
+  margin: 0;
+  color: grey;
+}
+
 .card-team {
   text-align: center;
 }
@@ -136,10 +146,12 @@ body {
 
 .card-score-detail {
   text-align: center;
+  font-size: 230%;
 }
 
 .score-minute {
-  margin-top: 50%;
+  margin-top: 40%;
+  font-size: small;
 }
 
 .card-standing {

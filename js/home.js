@@ -1,3 +1,23 @@
+//Fetch Trending Matches
+const eplmatch = () =>{
+  fetch('https://www.thesportsdb.com/api/v1/json/1/eventspastleague.php?id=4328')
+  .then((response)=>response.json())
+  .then((data) =>{
+    let result = data.events
+    document.getElementById('finished-card-score1').innerHTML = result[0].strStatus.substr(6,8)
+    document.getElementById('card-round1').innerHTML = 'Fixtures '+result[0].intRound
+    document.getElementById('card-league-img').src = `./assets/img/leaguehome/${result[0].strLeague}.png`
+    document.getElementById('card-hometeam-img1').src = `./assets/img/All Teams/${result[0].strHomeTeam}.png`
+    document.getElementById('card-hometeam-name1').innerHTML = result[0].strHomeTeam
+    document.getElementById('card-score1').innerHTML = `${result[0].intHomeScore} : ${result[0].intAwayScore}`
+    document.getElementById('card-date1').innerHTML = result[0].dateEvent
+    document.getElementById('card-awayteam-img1').src = `./assets/img/All Teams/${result[0].strAwayTeam}.png`
+    document.getElementById('card-awayteam-name1').innerHTML = result[0].strAwayTeam
+  })
+}
+eplmatch()
+
+
 // Fetch League Standing
 const laliga = () => {
   fetch(
