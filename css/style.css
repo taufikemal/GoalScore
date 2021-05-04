@@ -372,3 +372,14 @@ ul li {
 .topscorer-container thead th:nth-child(5){
   text-align: left;
 }
+
+.liga{
+  opacity: 0.4;
+  width: 60%;
+  filter: drop-shadow(1px 1px 1px rgba(0,0,0.8));
+  cursor: pointer;
+}
+
+.liga:hover {
+  opacity: 1;
+}

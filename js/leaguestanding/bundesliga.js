@@ -9,7 +9,7 @@ fetch('https://www.thesportsdb.com/api/v1/json/1/lookuptable.php?l=4331&s=2020-2
       result.forEach(item => {
           temp += "<tr>"
           temp += `<td>${item.intRank}</td>`
-          temp += `<td><img src=${item.strTeamBadge}></td>`
+          temp += `<td><img src=${item.strTeamBadge} width="30px"></td>`
           temp += `<td>${item.strTeam}</td>`
           temp += `<td>${item.intPlayed}</td>`
           temp += `<td>${item.intWin}</td>`
