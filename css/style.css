@@ -140,6 +140,10 @@ body {
   text-align: center;
 }
 
+.card-team p{
+  font-size: 87%;
+}
+
 .img-team {
   margin-bottom: 5%;
 }
