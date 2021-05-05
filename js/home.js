@@ -165,7 +165,6 @@ const mainnews = ()=>{
   .then((data)=>{
     let result = data.articles;
     let maks = 3;
-    // document.getElementById('starting-news-home').style.backgroundImage = "url(result[0].urlToImage)";
     // head news image
     document.getElementById('starting-news-home').src = result[0].urlToImage
     document.getElementById('titletopnewshome').innerHTML = result[0].title
@@ -178,9 +177,9 @@ const mainnews = ()=>{
     document.getElementById('sidenewsdate2').innerHTML = result[2].publishedAt
     document.getElementById('sidenewsdate3').innerHTML = result[3].publishedAt
     // Other news Title (3)
-    document.getElementById('sidenewstitle1').innerHTML = result[1].title
-    document.getElementById('sidenewstitle2').innerHTML = result[2].title
-    document.getElementById('sidenewstitle3').innerHTML = result[3].title
+    document.getElementById('sidenewstitle1').innerHTML = `${result[1].title.substr(0,70)}...`
+    document.getElementById('sidenewstitle2').innerHTML = `${result[2].title.substr(0,70)}...`
+    document.getElementById('sidenewstitle3').innerHTML = `${result[3].title.substr(0,70)}...`
   })
 }
 mainnews()

@@ -195,13 +195,11 @@ body {
 
 .starting-news {
   position: relative;
-  height: 317px;
   border-radius: 14px;
 }
 
 .img-starting-news-home{
   max-width:100%;
-  height: 310px;
   border-radius: 10px;
 }
 
@@ -221,17 +219,20 @@ body {
 
 .row-sm{
   width: 100%;
-  margin: 1% 0;
+  margin: 0.5% 0;
 }
 
 .side-news{
   display: flex;
+  background-size: cover;
 }
 
 .side-news img{
-  margin-right: 7%;
-  width: 140px;
+  width: 20%;
   border-radius: 10px;
+}
+.side-news-content{
+  margin-left: 3%;
 }
 
 .side-news-date{
