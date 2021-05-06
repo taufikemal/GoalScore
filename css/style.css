@@ -392,12 +392,27 @@ ul li {
 /* Finished Matches Page */
 .heading-livescore-page{
   background-color: #2b2e4a;
+  padding-bottom: 10%;
 }
+
 
 .align-heading-livescore{
   text-align: center;
+  margin-top: 2%;
 }
 
 .align-heading-livescore button{
   margin: 0 0.5%;
+}
+
+.big-matches-title{
+  color: white;
+  margin: 3% 0 0 0;
+}
+
+.titlesection-finished{
+  color: #2b2e4a;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: -2%;
 }
