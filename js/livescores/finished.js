@@ -57,6 +57,45 @@ const prem = () => {
       document.getElementById('card-date-prem3').innerHTML = result[3].dateEvent.split("-").reverse().join("/")
       document.getElementById('card-awayteam-img-prem3').src = `../assets/img/All Teams/${result[3].strAwayTeam}.png`
       document.getElementById('card-awayteam-name-prem3').innerHTML = awayprem3[awayprem3.length-1]
+
+      let homeprem4 = result[4].strHomeTeam.split(" ")
+      let awayprem4 = result[4].strAwayTeam.split(" ")
+      document.getElementById('finished-card-score-prem4').innerHTML = result[4].strStatus.substr(6,8)
+      document.getElementById('card-round-prem4').innerHTML = 'Fixtures '+result[4].intRound
+      document.getElementById('card-league-img-prem4').src = `../assets/img/leaguehome/${result[4].strLeague}.png`
+      document.getElementById('card-hometeam-img-prem4').src = `../assets/img/All Teams/${result[4].strHomeTeam}.png`
+      document.getElementById('card-hometeam-name-prem4').innerHTML = homeprem4[homeprem4.length-1]
+      document.getElementById('card-scorehome-prem4').innerHTML = `${result[4].intHomeScore}`
+      document.getElementById('card-scoreaway-prem4').innerHTML = `${result[4].intAwayScore}`
+      document.getElementById('card-date-prem4').innerHTML = result[4].dateEvent.split("-").reverse().join("/")
+      document.getElementById('card-awayteam-img-prem4').src = `../assets/img/All Teams/${result[4].strAwayTeam}.png`
+      document.getElementById('card-awayteam-name-prem4').innerHTML = awayprem4[awayprem4.length-1]
+
+      let homeprem5 = result[5].strHomeTeam.split(" ")
+      let awayprem5 = result[5].strAwayTeam.split(" ")
+      document.getElementById('finished-card-score-prem5').innerHTML = result[5].strStatus.substr(6,8)
+      document.getElementById('card-round-prem5').innerHTML = 'Fixtures '+result[5].intRound
+      document.getElementById('card-league-img-prem5').src = `../assets/img/leaguehome/${result[5].strLeague}.png`
+      document.getElementById('card-hometeam-img-prem5').src = `../assets/img/All Teams/${result[5].strHomeTeam}.png`
+      document.getElementById('card-hometeam-name-prem5').innerHTML = homeprem5[homeprem5.length-1]
+      document.getElementById('card-scorehome-prem5').innerHTML = `${result[5].intHomeScore}`
+      document.getElementById('card-scoreaway-prem5').innerHTML = `${result[5].intAwayScore}`
+      document.getElementById('card-date-prem5').innerHTML = result[5].dateEvent.split("-").reverse().join("/")
+      document.getElementById('card-awayteam-img-prem5').src = `../assets/img/All Teams/${result[5].strAwayTeam}.png`
+      document.getElementById('card-awayteam-name-prem5').innerHTML = awayprem5[awayprem5.length-1]
+
+      let homeprem6 = result[6].strHomeTeam.split(" ")
+      let awayprem6 = result[6].strAwayTeam.split(" ")
+      document.getElementById('finished-card-score-prem6').innerHTML = result[6].strStatus.substr(6,8)
+      document.getElementById('card-round-prem6').innerHTML = 'Fixtures '+result[6].intRound
+      document.getElementById('card-league-img-prem6').src = `../assets/img/leaguehome/${result[6].strLeague}.png`
+      document.getElementById('card-hometeam-img-prem6').src = `../assets/img/All Teams/${result[6].strHomeTeam}.png`
+      document.getElementById('card-hometeam-name-prem6').innerHTML = homeprem6[homeprem6.length-1]
+      document.getElementById('card-scorehome-prem6').innerHTML = `${result[6].intHomeScore}`
+      document.getElementById('card-scoreaway-prem6').innerHTML = `${result[6].intAwayScore}`
+      document.getElementById('card-date-prem6').innerHTML = result[6].dateEvent.split("-").reverse().join("/")
+      document.getElementById('card-awayteam-img-prem6').src = `../assets/img/All Teams/${result[6].strAwayTeam}.png`
+      document.getElementById('card-awayteam-name-prem6').innerHTML = awayprem6[awayprem6.length-1]
     });
 };
 prem()
