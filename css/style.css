@@ -388,3 +388,16 @@ ul li {
 .liga:hover {
   opacity: 1;
 }
+
+/* Finished Matches Page */
+.heading-livescore-page{
+  background-color: #2b2e4a;
+}
+
+.align-heading-livescore{
+  text-align: center;
+}
+
+.align-heading-livescore button{
+  margin: 0 0.5%;
+}
