@@ -172,7 +172,7 @@ ligue1()
 
 // Fetch Local News
 const mainnews = ()=>{
-  fetch('./js/uefanews.json')
+  fetch('https://newsapi.org/v2/top-headlines?country=id&apiKey=713ae87c31854452b8234e414b66bd9e')
   .then((response) => response.json())
   .then((data)=>{
     let result = data.articles;
