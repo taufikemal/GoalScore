@@ -27,6 +27,10 @@ const headbrazil = () => {
         "SE Palmeiras":"https://crests.football-data.org/1769.svg",
         "SC Corinthians Paulista":"https://crests.football-data.org/1779.svg",
         "Santos FC":"https://crests.football-data.org/6685.svg",
+        "EC Juventude":"https://crests.football-data.org/1920.svg",
+        "Cuiabá EC":"https://crests.football-data.org/676.svg",
+        "América FC":"https://crests.football-data.org/677.svg",
+        "Chapecoense AF":"https://crests.football-data.org/671.svg"
       }
       let hasil = data.matches
       console.log(hasil)

@@ -111,12 +111,12 @@ serieamatch()
 // Fetch League Standing
 const laliga = () => {
   fetch(
-    "https://www.thesportsdb.com/api/v1/json/1/lookuptable.php?l=4335&s=2020-2021"
+    "https://www.thesportsdb.com/api/v1/json/1/lookuptable.php?l=4331&s=2020-2021"
   )
     .then((response) => response.json())
     .then((data) => {
       let result = data.table;
-      result.sort((a,b)=>a.intRank - b.intRank);
+      result.sort((a,b)=>b.intPoints - a.intPoints);
       let maks = 5
       let temp = ""
       for(let i = 0;i<maks;i++){
@@ -135,7 +135,7 @@ const premierleague = () => {
       .then((response) => response.json())
       .then((data) => {
         let result = data.table;
-        result.sort((a,b)=>a.intRank - b.intRank);
+        result.sort((a,b)=>b.intPoints - a.intPoints);
         let maks = 5
         let temp = ""
         for(let i = 0;i<maks;i++){
@@ -154,7 +154,7 @@ const premierleague = () => {
       .then((response) => response.json())
       .then((data) => {
         let result = data.table;
-        result.sort((a,b)=>a.intRank - b.intRank);
+        result.sort((a,b)=>b.intPoints - a.intPoints);
         let maks = 5
         let temp = ""
         for(let i = 0;i<maks;i++){
@@ -171,29 +171,29 @@ premierleague()
 ligue1()
 
 // Fetch Local News
-const mainnews = ()=>{
-  fetch('https://newsapi.org/v2/top-headlines?country=id&apiKey=713ae87c31854452b8234e414b66bd9e')
-  .then((response) => response.json())
-  .then((data)=>{
-    let result = data.articles;
-    let maks = 3;
-    // head news image
-    document.getElementById('starting-news-home').src = result[0].urlToImage
-    document.getElementById('titletopnewshome').innerHTML = result[0].title
-    // Other news Image (3)
-    document.getElementById('sidenewsimg1').src = result[1].urlToImage
-    document.getElementById('sidenewsimg2').src = result[2].urlToImage
-    document.getElementById('sidenewsimg3').src = result[3].urlToImage
-    // Other news Date (3)
-    document.getElementById('sidenewsdate1').innerHTML = result[1].publishedAt
-    document.getElementById('sidenewsdate2').innerHTML = result[2].publishedAt
-    document.getElementById('sidenewsdate3').innerHTML = result[3].publishedAt
-    // Other news Title (3)
-    document.getElementById('sidenewstitle1').innerHTML = `${result[1].title.substr(0,70)}...`
-    document.getElementById('sidenewstitle2').innerHTML = `${result[2].title.substr(0,70)}...`
-    document.getElementById('sidenewstitle3').innerHTML = `${result[3].title.substr(0,70)}...`
-  })
-}
+// const mainnews = ()=>{
+//   fetch('https://newsapi.org/v2/top-headlines?country=id&apiKey=713ae87c31854452b8234e414b66bd9e')
+//   .then((response) => response.json())
+//   .then((data)=>{
+//     let result = data.articles;
+//     let maks = 3;
+//     // head news image
+//     document.getElementById('starting-news-home').src = result[0].urlToImage
+//     document.getElementById('titletopnewshome').innerHTML = result[0].title
+//     // Other news Image (3)
+//     document.getElementById('sidenewsimg1').src = result[1].urlToImage
+//     document.getElementById('sidenewsimg2').src = result[2].urlToImage
+//     document.getElementById('sidenewsimg3').src = result[3].urlToImage
+//     // Other news Date (3)
+//     document.getElementById('sidenewsdate1').innerHTML = result[1].publishedAt
+//     document.getElementById('sidenewsdate2').innerHTML = result[2].publishedAt
+//     document.getElementById('sidenewsdate3').innerHTML = result[3].publishedAt
+//     // Other news Title (3)
+//     document.getElementById('sidenewstitle1').innerHTML = `${result[1].title.substr(0,70)}...`
+//     document.getElementById('sidenewstitle2').innerHTML = `${result[2].title.substr(0,70)}...`
+//     document.getElementById('sidenewstitle3').innerHTML = `${result[3].title.substr(0,70)}...`
+//   })
+// }
 
 //Fetch UCL
 fetch('https://api.football-data.org/v2/competitions/CL/scorers',{
