@@ -19,7 +19,7 @@ body {
 
 /* HomePage */
 .navbar-nav li {
-  margin: 0 15px;
+  margin: 0 25px;
 }
 
 .logo {
@@ -421,4 +421,8 @@ ul li {
   font-weight: 600;
   font-size: 1.5rem;
   margin-bottom: -2%;
+}
+
+.navbar-logo{
+  max-width: 30%;
 }
