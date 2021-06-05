@@ -49,17 +49,17 @@ const bundesligamatch = () =>{
   .then((response)=>response.json())
   .then((data) =>{
     let result = data.events
-    let home = result[0].strHomeTeam.split(" ")
-    let away = result[0].strAwayTeam.split(" ")
-    document.getElementById('finished-card-score3').innerHTML = result[0].strStatus.substr(6,8)
-    document.getElementById('card-round3').innerHTML = 'Fixtures '+result[0].intRound
-    document.getElementById('card-league-img3').src = `./assets/img/leaguehome/${result[0].strLeague}.png`
-    document.getElementById('card-hometeam-img3').src = `./assets/img/All Teams/${result[0].strHomeTeam}.png`
+    let home = result[2].strHomeTeam.split(" ")
+    let away = result[2].strAwayTeam.split(" ")
+    document.getElementById('finished-card-score3').innerHTML = result[2].strStatus.substr(6,8)
+    document.getElementById('card-round3').innerHTML = 'Fixtures '+result[2].intRound
+    document.getElementById('card-league-img3').src = `./assets/img/leaguehome/${result[2].strLeague}.png`
+    document.getElementById('card-hometeam-img3').src = `./assets/img/All Teams/${result[2].strHomeTeam}.png`
     document.getElementById('card-hometeam-name3').innerHTML = home[home.length-1]
-    document.getElementById('card-scorehome3').innerHTML = `${result[0].intHomeScore}`
-    document.getElementById('card-scoreaway3').innerHTML = `${result[0].intAwayScore}`
-    document.getElementById('card-date3').innerHTML = result[0].dateEvent.split("-").reverse().join("/")
-    document.getElementById('card-awayteam-img3').src = `./assets/img/All Teams/${result[0].strAwayTeam}.png`
+    document.getElementById('card-scorehome3').innerHTML = `${result[2].intHomeScore}`
+    document.getElementById('card-scoreaway3').innerHTML = `${result[2].intAwayScore}`
+    document.getElementById('card-date3').innerHTML = result[2].dateEvent.split("-").reverse().join("/")
+    document.getElementById('card-awayteam-img3').src = `./assets/img/All Teams/${result[2].strAwayTeam}.png`
     document.getElementById('card-awayteam-name3').innerHTML = away[away.length-1]
   })
 }
@@ -91,17 +91,17 @@ const serieamatch = ()=>{
   .then((response)=>response.json())
   .then((data) =>{
     let result = data.events
-    let home = result[1].strHomeTeam.split(" ")
-    let away = result[1].strAwayTeam.split(" ")
-    document.getElementById('finished-card-score5').innerHTML = result[1].strStatus.substr(6,8)
-    document.getElementById('card-round5').innerHTML = 'Fixtures '+result[1].intRound
-    document.getElementById('card-league-img5').src = `./assets/img/leaguehome/${result[1].strLeague}.png`
-    document.getElementById('card-hometeam-img5').src = `./assets/img/All Teams/${result[1].strHomeTeam}.png`
+    let home = result[2].strHomeTeam.split(" ")
+    let away = result[2].strAwayTeam.split(" ")
+    document.getElementById('finished-card-score5').innerHTML = result[2].strStatus.substr(6,8)
+    document.getElementById('card-round5').innerHTML = 'Fixtures '+result[2].intRound
+    document.getElementById('card-league-img5').src = `./assets/img/leaguehome/${result[2].strLeague}.png`
+    document.getElementById('card-hometeam-img5').src = `./assets/img/All Teams/${result[2].strHomeTeam}.png`
     document.getElementById('card-hometeam-name5').innerHTML = home[home.length-1]
-    document.getElementById('card-scorehome5').innerHTML = `${result[1].intHomeScore}`
-    document.getElementById('card-scoreaway5').innerHTML = `${result[1].intAwayScore}`
-    document.getElementById('card-date5').innerHTML = result[1].dateEvent.split("-").reverse().join("/")
-    document.getElementById('card-awayteam-img5').src = `./assets/img/All Teams/${result[1].strAwayTeam}.png`
+    document.getElementById('card-scorehome5').innerHTML = `${result[2].intHomeScore}`
+    document.getElementById('card-scoreaway5').innerHTML = `${result[2].intAwayScore}`
+    document.getElementById('card-date5').innerHTML = result[2].dateEvent.split("-").reverse().join("/")
+    document.getElementById('card-awayteam-img5').src = `./assets/img/All Teams/${result[2].strAwayTeam}.png`
     document.getElementById('card-awayteam-name5').innerHTML = away[away.length-1]
   })
 }
@@ -194,7 +194,6 @@ const mainnews = ()=>{
     document.getElementById('sidenewstitle3').innerHTML = `${result[3].title.substr(0,70)}...`
   })
 }
-mainnews()
 
 //Fetch UCL
 fetch('https://api.football-data.org/v2/competitions/CL/scorers',{

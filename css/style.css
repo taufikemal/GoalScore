@@ -117,17 +117,19 @@ body {
 .finished-card-score{
   color: green;
   font-weight: 550;
-  font-size: 90%;
+  font-size: smaller;
   text-transform: uppercase;
 }
 
 .card-league-name{
   color: #198CCD;
+  font-size: 90%;
 }
 
 .main-card-score {
   display: flex;
   justify-content: space-between;
+  box-sizing: border-box;
 }
 
 .card-date{
@@ -146,6 +148,10 @@ body {
 
 .img-team {
   margin-bottom: 5%;
+}
+
+.img-team-bsa{
+  width: 41%;
 }
 
 .cardscore-content{

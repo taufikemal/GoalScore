@@ -569,5 +569,4 @@ const eredivisi = ()=>{
     });
 }
 
-eredivisi()
 
