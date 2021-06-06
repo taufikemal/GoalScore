@@ -107,6 +107,28 @@ const serieamatch = ()=>{
 }
 serieamatch()
 
+const ligue1match = ()=>{
+  fetch('https://thesportsdb.com/api/v1/json/1/eventspastleague.php?id=4334')
+  .then((response)=>response.json())
+  .then((data) =>{
+    let result = data.events
+    let home = result[2].strHomeTeam.split(" ")
+    let away = result[2].strAwayTeam.split(" ")
+    document.getElementById('finished-card-score6').innerHTML = result[2].strStatus.substr(6,8)
+    document.getElementById('card-round6').innerHTML = 'Fixtures '+result[2].intRound
+    document.getElementById('card-league-img6').src = `./assets/img/leaguehome/${result[2].strLeague}.png`
+    document.getElementById('card-hometeam-img6').src = `./assets/img/All Teams/${result[2].strHomeTeam}.png`
+    document.getElementById('card-hometeam-name6').innerHTML = home[home.length-1]
+    document.getElementById('card-scorehome6').innerHTML = `${result[2].intHomeScore}`
+    document.getElementById('card-scoreaway6').innerHTML = `${result[2].intAwayScore}`
+    document.getElementById('card-date6').innerHTML = result[2].dateEvent.split("-").reverse().join("/")
+    document.getElementById('card-awayteam-img6').src = `./assets/img/All Teams/${result[2].strAwayTeam}.png`
+    document.getElementById('card-awayteam-name6').innerHTML = away[away.length-1]
+  })
+}
+
+ligue1match()
+
 
 // Fetch League Standing
 const laliga = () => {

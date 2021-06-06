@@ -199,17 +199,6 @@ const headbrazil = () => {
       document.getElementById('card-date-laliga6').innerHTML = hasil[14].utcDate.substr(0,10).split("-").reverse().join("/")
       document.getElementById('card-awayteam-img-laliga6').src = team[awayHome14]
       document.getElementById('card-awayteam-name-laliga6').innerHTML = awayHome14.substr(0,15)
-
-      let teamHome15 = hasil[15].homeTeam.name
-      let awayHome15 = hasil[15].awayTeam.name
-      document.getElementById('finished-card-score-laliga7').innerHTML = hasil[15].status
-      document.getElementById('card-round-laliga7').innerHTML = `Fixtures ${hasil[15].matchday}`
-      document.getElementById('card-league-img-laliga7').src = `../assets/img/leaguehome/Brazilian Seria A.png`
-      document.getElementById('card-hometeam-img-laliga7').src = team[teamHome15]
-      document.getElementById('card-hometeam-name-laliga7').innerHTML = teamHome15.substr(0,15)
-      document.getElementById('card-date-laliga7').innerHTML = hasil[15].utcDate.substr(0,10).split("-").reverse().join("/")
-      document.getElementById('card-awayteam-img-laliga7').src = team[awayHome15]
-      document.getElementById('card-awayteam-name-laliga7').innerHTML = awayHome15.substr(0,15)
     });
 };
 
