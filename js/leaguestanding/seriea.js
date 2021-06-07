@@ -2,7 +2,7 @@ fetch('https://www.thesportsdb.com/api/v1/json/1/lookuptable.php?l=4332&s=2020-2
   .then(response => response.json())
   .then((data)=>{
       let result = data.table;
-      result.sort((a,b)=>a.intRank - b.intRank);
+      result.sort((a,b)=>b.intPoints - a.intPoints);
       console.log(result)
 
       let temp = "";
